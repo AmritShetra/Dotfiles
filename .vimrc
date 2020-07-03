@@ -1,13 +1,21 @@
-" File detection.
+" --------------------------------------
+" Settings
+" --------------------------------------
+
+" File detection
 filetype plugin indent on
 syntax on
 
-
+" General
 set number			" Numbered lines.
 set mouse=a			" Enable mouse usage.
 
 
-" https://stackoverflow.com/questions/24808932/vim-open-nerdtree-and-move-the-cursor-to-the-file-editing-area/24809018
+" --------------------------------------
+" NERDTree
+" --------------------------------------
+
+" Open NERDTree when Vim starts - put cursor on file instead of the tree.
 autocmd vimenter * NERDTree | wincmd p
 
 " Close Vim if only window left open is NERDTree.
