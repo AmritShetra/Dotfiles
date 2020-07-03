@@ -5,13 +5,8 @@ This is a repository containing files used to help me configure tools that I com
 ### Setup
 
 * Clone the repository to the home directory.
-* Set up a symbolic link so that the `vimrc` config file will be identified:
+* Navigate to `Dotfiles` & run the script:
 ```
-ln -sf ~/Dotfiles/.vimrc ~/.vimrc
-```
-* Install NERDTree plugin for Vim:
-```
-git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
-vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+bash setup.sh
 ```
 
