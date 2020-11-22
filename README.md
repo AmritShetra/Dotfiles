@@ -9,4 +9,8 @@ This is a repository containing files used to help me configure tools that I com
 ```
 bash setup.sh
 ```
+* In order to update Vim plugins, run the other script:
+```
+bash update-vim.sh
+```
 
