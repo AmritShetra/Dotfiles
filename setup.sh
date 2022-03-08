@@ -8,11 +8,14 @@ then
 	exit 0
 fi
 
-printf "[*] Installing NERDTree plugin for Vim. \n"
-git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
-vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+
+# Vim plugins
+mkdir -p ~/.vim/pack/plugins/start
+git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/plugins/start/nerdtree
+git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
+
 
 # https://stackoverflow.com/a/30187926
-# Set up symbolic link so our .vimrc is identified by Vim, in the home directory.
+# Set up symbolic link so this .vimrc is identified by Vim, in the home directory
 ln -sf $(pwd)/.vimrc ~/.vimrc
 
